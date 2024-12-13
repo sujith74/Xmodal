@@ -4,7 +4,7 @@
   padding: 2rem;
   text-align: center;
 }
-.modal-overlay {
+.modal-content {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,7 +16,7 @@
   align-items: center;
   z-index: 1000;
 }
-.modal {
+.modal2 {
   background: #fff;
   padding: 20px;
   border-radius: 8px;

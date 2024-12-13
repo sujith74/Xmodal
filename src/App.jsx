@@ -36,18 +36,17 @@ function App() {
       return;
     }
 
-    // Additional validations (if required)
-    if (!username.trim()) {
-      alert('Username cannot be empty.');
-      return;
-    }
-    if (!/\S+@\S+\.\S+/.test(email)) {
-      alert('Invalid email address. Please enter a valid email.');
-      return;
-    }
+    // if (!username.trim()) {
+    //   alert('Username cannot be empty.');
+    //   return;
+    // }
+    // if (!/\S+@\S+\.\S+/.test(email)) {
+    //   alert('Invalid email address. Please enter a valid email.');
+    //   return;
+    // }
 
     alert('Form submitted successfully!');
-    closeModal();
+    // closeModal();
   };
 
   return (

@@ -40,10 +40,10 @@ function App() {
     //   alert('Username cannot be empty.');
     //   return;
     // }
-    // if (!/\S+@\S+\.\S+/.test(email)) {
-    //   alert('Invalid email address. Please enter a valid email.');
-    //   return;
-    // }
+    if (!/\S+@\S+\.\S+/.test(email)) {
+      alert('Invalid email address. Please enter a valid email.');
+      return;
+    }
 
     alert('Form submitted successfully!');
     // closeModal();
@@ -53,9 +53,9 @@ function App() {
     <div className="modal">
       <h1>User Details Modal</h1>
       <button className="open-btn" onClick={openModal}>Open Form</button>
-
+<div className="modal-content">
       {isModalOpen && (
-        <div className="modal-content">
+        <div className="modal-layout">
           <div className="modal2">
             <h2>Fill Details</h2>
             <form className="form" onSubmit={validateForm}>
@@ -116,6 +116,7 @@ function App() {
           </div>
         </div>
       )}
+      </div>
     </div>
   );
 }
